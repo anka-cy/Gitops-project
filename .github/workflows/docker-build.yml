@@ -20,3 +20,15 @@ jobs:
 
     - name: Push Docker image
       run: docker push ankacy/gitops-app:${{ github.sha }}
+
+    - name: Update deployment image
+  run: |
+    sed -i "s|ankacy/gitops-app:.*|ankacy/gitops-app:${{ github.sha }}|g" k8s/deployment.yaml
+    - name: Commit updated manifest
+  run: |
+    git config user.name "github-actions"
+    git config user.email "github-actions@github.com"
+    git add k8s/deployment.yaml
+    git commit -m "update image tag ${{ github.sha }}"
+    git push
+    
