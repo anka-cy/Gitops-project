@@ -3,7 +3,7 @@ const app = express();
 
 app.get("/", (req, res) => {
   res.json({
-    message: "App is up and running!!!",
+    message: "Two-repo GitOps Architecture is live!",
     status: "success"
   });
 });
