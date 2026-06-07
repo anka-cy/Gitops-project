@@ -16,4 +16,4 @@ spec:
       - name: gitops-app
         image: ankacy/gitops-app:latest
         ports:
-        - containerPort: 80
+        - containerPort: 3000
