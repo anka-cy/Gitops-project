@@ -3,7 +3,7 @@ const app = express();
 
 app.get("/", (req, res) => {
   res.json({
-    message: " pipeline is working!!",
+    message: "pipeline is working!",
     status: "success"
   });
 });
