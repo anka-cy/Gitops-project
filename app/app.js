@@ -3,7 +3,7 @@ const app = express();
 
 app.get("/", (req, res) => {
   res.json({
-    message: "GitOps CI/CD Pipeline Running!",
+    message: "GitOps CI/CD Pipeline it's working!",
     status: "success"
   });
 });
