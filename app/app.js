@@ -3,7 +3,7 @@ const app = express();
 
 app.get("/", (req, res) => {
   res.json({
-    message: "Two-repo GitOps Architecture is live!",
+    message: "GitOps pipeline is working!!",
     status: "success"
   });
 });
