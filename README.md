@@ -16,6 +16,8 @@ This is the **Application Repository** of a two-part GitOps pipeline. It contain
 
 This project uses a **Two-Repo GitOps Architecture** to cleanly separate application code from infrastructure configuration.
 
+![Two-Repo GitOps Architecture Diagram](./diagram.png)
+
 1. **You Push Code:** Changes to the `main` branch trigger GitHub Actions.
 2. **Build & Push:** The pipeline builds a new Docker image, tags it with the Git commit SHA, and pushes it to DockerHub.
 3. **Update Infrastructure:** The pipeline then connects to the [Infrastructure Repository](https://github.com/anka-cy/Gitops-project-infra), updates `deployment.yaml` with the new image tag, and commits the change.
