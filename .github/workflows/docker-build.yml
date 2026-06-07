@@ -39,5 +39,5 @@ jobs:
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
         git add k8s/deployment.yaml
-        git commit -m "ci: update image tag to ${{ github.sha }}"
+        git commit -m "ci: update image tag to ${{ github.sha }} [skip ci]"
         git push
