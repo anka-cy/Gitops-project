@@ -15,5 +15,6 @@ spec:
       containers:
       - name: gitops-app
         image: ankacy/gitops-app:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
