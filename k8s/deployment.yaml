@@ -15,6 +15,6 @@ spec:
       containers:
       - name: gitops-app
         # Image tag is automatically updated by CI pipeline on every push to main
-        image: ankacy/gitops-app:IMAGE_TAG
+        image: ankacy/gitops-app:039af01c6fb5c292f5a7fa9866483cf11a40d731
         ports:
         - containerPort: 3000
