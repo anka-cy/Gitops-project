@@ -1,4 +1,4 @@
-# 🚀 GitOps CI/CD Pipeline (App Repository)
+#  GitOps CI/CD Pipeline (App Repository)
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
@@ -12,7 +12,7 @@ This is the **Application Repository** of a two-part GitOps pipeline. It contain
 
 ---
 
-## 🛠️ How the Pipeline Works
+##  How the Pipeline Works
 
 This project uses a **Two-Repo GitOps Architecture** to cleanly separate application code from infrastructure configuration.
 
